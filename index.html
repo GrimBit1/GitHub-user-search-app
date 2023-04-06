@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/9c8a957b25.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@400&display=swap"
+        rel="stylesheet" />
+    <title>Github Search</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">Github Search </h1>
+        </div>
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #0767d5"></i>
+            <input type="text" id="input" title="Search Here" placeholder="Search Github Username..."
+                onkeydown="checkingtheEnterKey(event)" />
+            <button onclick="getUser()">Search</button>
+        </div>
+        <div class="data">
+            <div class="data-header">
+                <div id="img" alt=""></div>
+                <div class="nameheader">
+                    <div class="namebox">
+                        <h2 class="name">The Octocat</h2>
+                        <a href="" target="_blank">@octocat</a>
+                    </div>
+                    <div class="date-joined">Joined </div>
+                </div>
+            </div>
+            <div class="data-content">
+                <div class="bio">This profile has no bio</div>
+                <div class="githubData">
+                    <div class="repos">Repos</div>
+                    <div class="followers">Followers</div>
+                    <div class="following">Following</div>
+                </div>
+                <div class="additional-data">
+                    <div class="location"><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>No location
+                        found</div>
+                    <div class="twitter"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i>No twitter account
+                        found</div>
+                    <div class="link"><i class="fa-solid fa-link" style="color: #ffffff;"></i>No link found</div>
+                    <div class="company"><i class="fa-solid fa-building-user" style="color: #ffffff;"></i>No company
+                        found</div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
