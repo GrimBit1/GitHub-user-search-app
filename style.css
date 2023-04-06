@@ -119,6 +119,7 @@ body {
   background-position: center;
   background-size: cover;
   border-radius: 50%;
+  transition: background-image 0.3s ease-in-out;
 }
 .nameheader {
   width: 70%;
@@ -157,6 +158,15 @@ body {
 }
 .additional-data {
   display: grid;
-  grid: auto auto / auto auto;
-  row-gap: 15px;
+  word-wrap: break-word;
+  grid: 1fr 1fr / 1fr 1fr;
+  gap: 15px;
+}
+.additional-data div {
+  display: flex;
+  word-break: break-all;
+  gap: 7px;
+}
+.additional-data div i {
+  width: 10%;
 }

@@ -75,6 +75,8 @@ const getUser = async () => {
       following.innerHTML = `Following <div>${
         value.following ?? "No company found"
       }<div/>`;
+    } else {
+      alert("Error: Search not found");
     }
   } else {
     img.style.backgroundImage = ``;
