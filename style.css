@@ -18,22 +18,18 @@ h1 {
 h2 {
   font-size: 1.5em;
 }
-html,
-body {
-  height: 100%;
-  width: 100%;
-}
-
 body {
   background-color: #141c2f;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
 .container {
-  height: 73%;
-  width: 40%;
+  height: 73vh;
+  min-width: 40%;
   display: flex;
   flex-direction: column;
   /* align-items: center; */
@@ -88,7 +84,7 @@ body {
 }
 
 .search button {
-  width: 13%;
+  min-width: 13%;
   background-color: #0079fe;
   outline: none;
   border: none;
@@ -110,8 +106,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 30%;
+  min-height: 30%;
+  
 }
+
 #img {
   background-image: url("https://avatars.githubusercontent.com/u/583231?v=4");
   height: 100%;
@@ -120,6 +118,7 @@ body {
   background-size: cover;
   border-radius: 50%;
   transition: background-image 0.3s ease-in-out;
+  /* width: 30%; */
 }
 .nameheader {
   width: 70%;
@@ -139,6 +138,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .bio {
   color: dimgrey;
 }
@@ -169,4 +169,26 @@ body {
 }
 .additional-data div i {
   width: 10%;
+}
+@media screen and (max-width:700px) {
+  .nameheader{
+    flex-direction: column;
+  }
+  .data-content{
+    width: 100%;
+    margin-top: 10px;
+  }
+.data-header {
+  flex-direction: column;
+}
+#img{
+  width: 50%;
+  height: unset;
+}
+.container{
+  height: 90%;
+}
+.search{
+  height: 56px;
+}
 }
