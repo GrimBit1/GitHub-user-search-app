@@ -187,7 +187,9 @@ body {
 }
 .container{
   height: 90%;
+  gap: 20px;
 }
+
 .search{
   height: 56px;
 }
